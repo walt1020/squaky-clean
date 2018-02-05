@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Body from "./Components/Body.js";
-import Footer from "./Components/Footer.js";
+import Footer from "./Components/Footer/Footer.js";
 import logo from './logo.svg';
-import Navbar from "./Components/Navbar.js";
-import './App.css';
+import Navbar from "./Components/Nav/Navbar.js";
+import styles from './App.css';
 
 class App extends Component {
   render() {
