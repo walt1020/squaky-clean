@@ -6,9 +6,8 @@ const technicianSchema = new Schema({
   lastName: { type: String, required: true },
   company: {type: String, required: true},
   description: {type: String, required: true},
-  profile_picture: {type}
 });
 
-const Technician = mongoose.model("Customer", technicianSchema);
+const Technician = mongoose.model("Technician", technicianSchema);
 
 module.exports = Technician;
