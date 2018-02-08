@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "squeaky-clean",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "Schedule A Car Wash, on your Time!",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
