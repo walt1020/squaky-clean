@@ -1,16 +1,19 @@
 {
-  "name": "squeaky-clean",
+  "name": "mern",
   "version": "1.0.0",
-  "description": "Schedule A Car Wash, on your Time!",
+  "description": "Mern Demo",
   "main": "server.js",
+   "engines": {
+    "node": "6.11.4",
+     "npm": "3.10.10"
+  },
   "scripts": {
     "server": "node server.js",
     "client": "cd client && npm run start",
     "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
     "build": "cd client && npm run build",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node customerSeed.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -20,8 +23,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "express": "^4.15.4",
-    "mongoose": "^5.0.3",
-    "nodemon": "^1.14.12"
+    "express": "^4.15.4"
   }
 }
