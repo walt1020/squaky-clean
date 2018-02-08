@@ -8,7 +8,7 @@ import Rickroll from "./rickroll.png";
 class Body extends Component {
   render() {
     return (
-      
+      <div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
           <ol class="carousel-indicators">
@@ -52,7 +52,9 @@ class Body extends Component {
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
           </a>
+
         </div>
+      </div>
       
     );
   }
