@@ -4,24 +4,24 @@ import Footer from "./Components/Footer.js";
 import logo from './logo.svg';
 import Navbar from "./Components/Navbar.js";
 import './App.css';
+import Contact from "./pages/contact.js";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <div>
-          <Navbar />
-        </div>
-
-        <hr />
-
-        <div>
-         <Body />
-        </div>
-
-        <div>
-          <Footer />
-        </div>
+        <BrowserRouter>
+          <div>
+            <Navbar />
+            <Switch>
+              <Route path="/" exact component={Body} />
+              <Route path="/contact" exact component={Contact}/>
+            </Switch>
+            <Footer />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
