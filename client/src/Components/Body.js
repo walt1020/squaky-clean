@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Carwash from "./carwash.gif";
 import Duckroll from "./duckroll.jpg";
 import Rickroll from "./rickroll.png";
-import PayPalButton1 from "./PayPalButton/button1.js"
 // import './Body.css';
 
 
@@ -10,7 +9,6 @@ class Body extends Component {
   render() {
     return (
       <div>
-        <PayPalButton1/>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
           <ol class="carousel-indicators">
