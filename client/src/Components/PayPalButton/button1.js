@@ -7,8 +7,9 @@ class PayPalButton1 extends Component {
     return (
 		<div className="col-xs-4 table-bordered" >
 			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				<h3>Basic Squeakly Clean Carwash</h3>
-				<p>We arrive on site and give your car an awesome wash. Base Price is $25.  </p>
+				<h3>Squeaky Clean </h3>
+				<p>Exterior only wash, clear coat shine, clear coat protectant, and underbody wash.  </p>
+				<p> $15 </p>
 
 				<input type="hidden" name="cmd" value="_s-xclick" />
 				<input type="hidden" name="hosted_button_id" value="DUHW64YWZSHGS" />

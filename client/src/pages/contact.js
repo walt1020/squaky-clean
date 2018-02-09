@@ -1,6 +1,7 @@
 import React from 'react';
 import { Jumbotron } from '../Components/jumbotron/Jumbotron';
 
+
 const defaultState = {
   email: '',
   body: '',
@@ -8,10 +9,10 @@ const defaultState = {
 var styles = {
   fonts:{
     color: 'blue',
-    backgroundColor:'red'
+  
   },
   background:{
-    backgroundColor:'cyan'
+    backgroundColor:'white'
   }
 }
 
@@ -54,7 +55,7 @@ export class Contact extends React.Component {
                       placeholder="name@example.com" />
             </div>
             <div className="form-group">
-              <label for="exampleFormControlTextarea1">What do you want?</label>
+              <label for="exampleFormControlTextarea1">Enter your comment here.</label>
               <textarea className="form-control"
                         name="body"
                         value={this.state.body}
