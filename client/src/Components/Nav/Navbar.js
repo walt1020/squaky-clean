@@ -9,10 +9,10 @@ class Navbar extends Component {
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Squeaky Clean <span> <img src={Logo} /> </span></a>
+              <a class="navbar-brand" href="/">Squeaky Clean <span> <img src={Logo} /> </span></a>
             </div>
             <ul class="nav navbar-nav">
-              <li class="active">
+              <li class="">
                 <Link to="/">Packages</Link>
               </li>
               <li>
@@ -20,6 +20,9 @@ class Navbar extends Component {
               </li>
               <li>
                 <Link to="/">Logout</Link>
+              </li>
+              <li>
+                <Link to="/buttonPage">Test Packages and Buttons</Link>
               </li>
 
             </ul>

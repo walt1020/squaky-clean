@@ -4,6 +4,7 @@ import Footer from "./Components/Footer/Footer.js";
 import Navbar from "./Components/Nav/Navbar.js";
 import './App.css';
 import Contact from "./pages/contact.js";
+import ButtonPage from "./pages/buttonPage";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
@@ -15,10 +16,13 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Navbar />
-            <Switch>
-              <Route path="/" exact component={Body} />
-              <Route path="/contact" exact component={Contact}/>
-            </Switch>
+            <div className="container">
+              <Switch>
+                <Route path="/" exact component={Body} />
+                <Route path="/contact" exact component={Contact}/>
+                <Route path="/buttonPage" exact component={ButtonPage}/>
+              </Switch>
+            </div>
             <Footer />
           </div>
         </BrowserRouter>

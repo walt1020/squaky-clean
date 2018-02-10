@@ -7,7 +7,7 @@ car: {
   	make: {type: String, required:true},
   	model: {type: String, required:true},
   	color: {type: String, required:true},
-  	year_made: {type: String, required: true}
+  	year_made: {type: String, required: true},
   	License_plate: {type: String, required: true}
   },
 
@@ -17,6 +17,6 @@ special_instructions: {type: String, required:true}
 
 });
 
-const Appointment = mongoose.model("Customer", appointmentSchema);
+const Appointment = mongoose.model("Appointment", appointmentSchema);
 
 module.exports = Appointment;
