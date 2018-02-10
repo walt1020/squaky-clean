@@ -4,9 +4,9 @@ import './Footer.css';
 class Footer extends Component {
   render() {
     return (
-      <div className="footer" style={{backgroundColor:"darkblue"}}>
+      <div className="footer" >
         
-        <h1>Footer</h1>
+        <p><strong>Sqeaky Clean</strong> | 511 Clean Water Rd. | Durham, NC | 919-555-1234</p> 
 
       </div>
     );
