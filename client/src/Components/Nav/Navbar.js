@@ -12,7 +12,7 @@ class Navbar extends Component {
               <a class="navbar-brand" href="/">Squeaky Clean <span> <img src={Logo} /> </span></a>
             </div>
             <ul class="nav navbar-nav">
-              <li class="active">
+              <li class="">
                 <Link to="/">Packages</Link>
               </li>
               <li>
