@@ -36,9 +36,12 @@ userController.login = function(req, res) {
 
 // Post login
 userController.doLogin = function(req, res) {
-  passport.authenticate('local')(req, res, function () {
-    res.redirect('/');
-  });
+  console.log("in AuthController Login");
+  console.log(req.body);
+  // passport.authenticate('local')(req, res, function () {
+  //   res.redirect('/');
+  // });
+
 };
 
 // logout

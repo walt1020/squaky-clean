@@ -3,7 +3,9 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const routes = require("./routes/index.js");
-
+var cors = require('cors');
+//to assist with server to server communication
+app.use(cors());
 // Passport dependencies
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -20,6 +22,7 @@ mongoose.connect('mongodb://localhost/node-auth')
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
 
 app.use(passport.initialize());
 app.use(passport.session());

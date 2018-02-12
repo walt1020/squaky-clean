@@ -6,13 +6,13 @@ class Navbar extends Component {
   render() {
     return (
       <div className="Navbar-1">
-        <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="/">Squeaky Clean <span> <img src={Logo} /> </span></a>
+        <nav className="navbar navbar-inverse">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <a className="navbar-brand"  href="/">Squeaky Clean <span> <img src={Logo} alt="brand logo" /> </span></a>
             </div>
-            <ul class="nav navbar-nav">
-              <li class="">
+            <ul className="nav navbar-nav">
+              <li className="">
                 <Link to="/">Packages</Link>
               </li>
               <li>
@@ -26,7 +26,7 @@ class Navbar extends Component {
               </li>
 
             </ul>
-            <button class="btn btn-danger navbar-btn pull-left">Button</button>
+            <button className="btn btn-danger navbar-btn pull-left">Button</button>
           </div>
         </nav>
 
