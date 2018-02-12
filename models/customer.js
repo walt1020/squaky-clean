@@ -18,7 +18,9 @@ const customerSchema = new Schema({
 
   },
   home_address: {type: String, required:true},
-  special_instructions: {type: String, required:true},
+  technician: {type: Boolean, default:false},
+  product_selected: {type: String}
+  special_instructions: {type: String, required:true}
 });
 
 const Customer = mongoose.model("Customer", customerSchema);
