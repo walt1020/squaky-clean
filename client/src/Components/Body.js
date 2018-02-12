@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import Carwash from "./carwash.gif";
 import Duckroll from "./duckroll.jpg";
+import Rickroll from "./rickroll.png";
+import Signin from "./Signin/signin.js";
 import aboutus from "./aboutus.JPG";
 // import './Body.css';
 
 
 class Body extends Component {
+  constructor(props){
+    super(props);
+  }
+
   render() {
     return (
       <div>
-
         <div>
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
       
@@ -56,60 +61,7 @@ class Body extends Component {
 
           </div>
         </div>
-
-        <div class="customerSignin col-xs-12 text-left">
-          <h1>New User Sign-Up</h1>
-          <form data-toggle="validator" role="form">
-  
-            <div class="form-group">
-              <label for="inputEmail" class="control-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required />
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group ">
-              <label for="inputPassword" class="control-label">Password</label>
-              <div class="form row">
-                <div class="form-group col-xs-12">
-                  <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required />
-                  <div class="help-block">Minimum of 6 characters</div>
-                </div>
-                <div class="form-group col-xs-12">
-                  <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required />
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="customerSignin col-xs-12 text-left">
-          <h1>Existing User Sign-In</h1>
-          <form data-toggle="validator" role="form">
-  
-            <div class="form-group">
-              <label for="existingEmail" class="control-label">Email</label>
-              <input type="email" class="form-control" id="existingEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required />
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <label for="existingPassword" class="control-label">Password</label>
-              <div class="form row">
-                <div class="form-group col-xs-12">
-                  <input type="existingPassword" data-minlength="6" class="form-control" id="existingPassword" placeholder="Password" required />
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
-        </div>
-
-        
-
+        <Signin></Signin>
       </div>
       
     );
