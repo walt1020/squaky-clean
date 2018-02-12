@@ -22,8 +22,8 @@ class App extends Component {
           <div>
             <Navbar />
             <div className="container">
-              <video playsinline autoplay muted loop id="bgvid">
-                <source src={backgroundMovie} type="video/mp4" />
+              <video playsInline autoPlay muted loop id="bgvid">
+                <source src={backgroundMovie} type="video/mp4">< /source>
             </video>
               <Switch>
                 <Route path="/" exact component={Body} />

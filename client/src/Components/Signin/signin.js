@@ -34,11 +34,11 @@ class Signin extends Component {
                 <h1>New User Sign-Up</h1>
                 <form data-toggle="validator" role="form">
                     <div className="form-group">
-                        <label for="inputEmail" className="control-label">Email</label>
+                        <label htmlFor="inputEmail" className="control-label">Email</label>
                         <input type="email" className="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required />
                     </div>
                     <div className="form-group ">
-                        <label for="inputPassword" className="control-label">Password</label>
+                        <label htmlFor="inputPassword" className="control-label">Password</label>
                         <div className="form row">
                             <div className="form-group col-xs-12">
                                 <input type="password" data-minlength="6" className="form-control" id="inputPassword" placeholder="Password" required />
@@ -58,11 +58,11 @@ class Signin extends Component {
                 <h1>Existing User Sign-In</h1>
                 <form data-toggle="validator" role="form">
                     <div className="form-group">
-                        <label for="existingEmail" className="control-label">Email</label>
+                        <label htmlFor="existingEmail" className="control-label">Email</label>
                         <input type="email" className="form-control" id="existingEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required />
                     </div>
                     <div className="form-group">
-                        <label for="existingPassword" className="control-label">Password</label>
+                        <label htmlFor="existingPassword" className="control-label">Password</label>
                         <div className="form row">
                             <div className="form-group col-xs-12">
                                 <input type="existingPassword" data-minlength="6" className="form-control" id="existingPassword" placeholder="Password" required />
