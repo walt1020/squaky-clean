@@ -22,8 +22,7 @@ class App extends Component {
           <div>
             <Navbar />
             <div className="container">
-            <video playsinline autoplay muted loop id="bgvid">
-                {/* <source src="polina.webm" type="video/webm" /> */}
+              <video playsinline autoplay muted loop id="bgvid">
                 <source src={backgroundMovie} type="video/mp4" />
             </video>
               <Switch>
