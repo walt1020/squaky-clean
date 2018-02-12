@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carwash from "./carwash.gif";
 import Duckroll from "./duckroll.jpg";
-import Rickroll from "./rickroll.png";
+import aboutus from "./aboutus.JPG";
 // import './Body.css';
 
 
@@ -28,10 +28,10 @@ class Body extends Component {
               </div>
 
               <div class="item">
-                <img src={Rickroll} alt="rickroll" class="center-block" />
+                <img src={aboutus} alt="aboutus" class="center-block" />
                 <div class="carousel-caption">
-                  <h3>RickRoll!</h3>
-                  <p>As Unsettling as it is Catchy!</p>
+                  <h3>Squeaky Clean</h3>
+                  <p>Book your appointment today!</p>
                 </div>
               </div>
 

@@ -6,7 +6,7 @@ import './App.css';
 import Contact from "./pages/contact.js";
 import ButtonPage from "./pages/buttonPage";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+import scheduleService from "./pages/scheduleService.js";
 
 class App extends Component {
 

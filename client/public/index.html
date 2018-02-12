@@ -24,6 +24,7 @@
     -->
 
     <title>Squeaky Clean Car Wash!</title>
+     
   </head>
   <body>
     
@@ -39,6 +40,44 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+     <div>
+        <p> Book your appointment with our Mobile Detailing Team!</p>
+        <div className="bootstrap-iso">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6 col-sm-6 col-xs-12">
+                <form method="post">
+                  <div className="form-group"> 
+                    <label className="control-label" htmlFor="date">Step 1: Select a Date</label>
+                    <input className="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                  </div>
+                </form></div>
+            </div>    
+          </div>
+        </div>
+        <div className="bootstrap-iso">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-6 col-sm-6 col-xs-12">
+                <label className="control-label" htmlFor="date">Step 2: Select a Time</label>
+                <br />
+                <div className="checkbox">
+                  <label><input type="checkbox" defaultValue />8am-11am</label>
+                </div>
+                <div className="checkbox">
+                  <label><input type="checkbox" defaultValue />11am-2pm</label>
+                </div>
+                <div className="checkbox">
+                  <label><input type="checkbox" defaultValue />2pm-4pm</label>
+                </div>
+              </div>
+            </div>
+            <div className="form-group"> 
+              <button className="btn btn-primary " name="submit" type="submit">Submit</button>
+            </div>
+            <p>*Note that for same day appointment, scheduling will have to be prior to 2pm.</p>
+          </div></div></div>
   </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
