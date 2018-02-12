@@ -13,7 +13,8 @@
     "start": "./node_modules/.bin/concurrently \"npm run server\" \"npm run client\"",
     "build": "cd client && npm run build",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node customerSeed.js"
   },
   "author": "",
   "license": "ISC",
