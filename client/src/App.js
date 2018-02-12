@@ -11,6 +11,7 @@ import Delux from "./pages/package2Details";
 import Ultimate from "./pages/package3Details";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import scheduleService from "./pages/scheduleService.js";
+import backgroundMovie from "./background-movie.mp4";
 
 class App extends Component {
 
@@ -21,6 +22,10 @@ class App extends Component {
           <div>
             <Navbar />
             <div className="container">
+            <video playsinline autoplay muted loop id="bgvid">
+                {/* <source src="polina.webm" type="video/webm" /> */}
+                <source src={backgroundMovie} type="video/mp4" />
+            </video>
               <Switch>
                 <Route path="/" exact component={Body} />
                 <Route path="/packageOverview" exact component={Packages} />

@@ -4,7 +4,7 @@ import Duckroll from "./duckroll.jpg";
 import Rickroll from "./rickroll.png";
 import Signin from "./Signin/signin.js";
 import aboutus from "./aboutus.JPG";
-// import './Body.css';
+import './Body.css';
 
 
 class Body extends Component {
