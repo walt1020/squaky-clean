@@ -24,9 +24,11 @@ class Navbar extends Component {
               <li>
                 <Link to="/buttonPage">Test Packages and Buttons</Link>
               </li>
-
+              <li>
+                <Link to="/">Schedule Service</Link>
+              </li>
             </ul>
-            <button class="btn btn-danger navbar-btn pull-left">Button</button>
+            
           </div>
         </nav>
 
