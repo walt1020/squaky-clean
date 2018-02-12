@@ -4,5 +4,8 @@ Navbar-1{
     font-weight: bolder; 
     font-style: normal;
     color: yellow;
-    font-size: 1em 
+    font-size: 1em; 
  }
+ .navbar-fixed-top {
+    min-height: 180px;
+    }
