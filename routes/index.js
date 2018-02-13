@@ -23,5 +23,8 @@ router.get('/logout', auth.logout);
 router.get('/test',function(req,res){
 	return res.json({'test':'successful'});
 })
+router.post('/service',function(req,res){
+	console.log(req.body);
+})
 module.exports = router;
 

@@ -10,7 +10,7 @@ import Clean from "./pages/package1Details";
 import Delux from "./pages/package2Details";
 import Ultimate from "./pages/package3Details";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import scheduleService from "./pages/scheduleService.js";
+import Service from "./pages/scheduleService.js";
 import backgroundMovie from "./background-movie.mp4";
 
 class App extends Component {
@@ -31,6 +31,7 @@ class App extends Component {
                 <Route path="/package1Details" exact component={Clean} />
                 <Route path="/package2Details" exact component={Delux} />
                 <Route path="/package3Details" exact component={Ultimate} />
+                <Route path="/service" exact component={Service}/>
                 <Route path="/contact" exact component={Contact}/>
                 <Route path="/buttonPage" exact component={ButtonPage}/>
               </Switch>

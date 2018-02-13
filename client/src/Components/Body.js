@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Carwash from "./carwash.gif";
-import Duckroll from "./duckroll.jpg";
-import Rickroll from "./rickroll.png";
+import testimony2 from "./testimony2.JPG";
 import Signin from "./Signin/signin.js";
 import aboutus from "./aboutus.JPG";
 import './Body.css';
+
 
 
 class Body extends Component {
@@ -21,14 +20,12 @@ class Body extends Component {
             <ol className="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div className="carousel-inner center-block">
               <div className="item active">
-                <img src={Duckroll} alt="duckroll" className="center-block" />
+                <img src={testimony2} alt="testimony2" className="center-block" />
                 <div className="carousel-caption">
-                  <h3>Duckroll!</h3>
-                  <p>Fond Memories of Rickrolling!</p>
+                  <h3>Squeaky Clean</h3>
                 </div>
               </div>
 
@@ -36,17 +33,10 @@ class Body extends Component {
                 <img src={aboutus} alt="aboutus" className="center-block" />
                 <div className="carousel-caption">
                   <h3>Squeaky Clean</h3>
-                  <p>Book your appointment today!</p>
+                 
                 </div>
               </div>
 
-              <div className="item">
-                <img src={Carwash} alt="car wash" className="center-block" />
-                <div className="carousel-caption">
-                  <h3>Car Wash!</h3>
-                  <p>We Clean it for You!</p>
-                </div>
-              </div>
             </div> {/*closing carousel inner*/}
 
             {/*Left and right controls*/}
