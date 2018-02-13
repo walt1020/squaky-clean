@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './package.css';
 
 
 class Package3Details extends Component {
   render() {
     return (
-		<div className="col-xs-4 table-bordered" >
+		<div className="col-xs-4 table-bordered washPackages" >
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <h3>Squeaky Ultimate</h3>
                 <p>Full service wash, mat shampoo, clear coat protectant,  clear coat shine, coat protectant, underbody wash, tire shine, rim cleaning, polish wax, interior fragrance  .</p>
