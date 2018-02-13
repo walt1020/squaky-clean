@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import './package.css';
 
 
 class Package1 extends Component {
   render() {
     return (
-		<div className="col-xs-4 table-bordered" >
+		<div className="col-xs-4 table-bordered washPackages" >
 			<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 				<h3>Squeaky Clean </h3>
 				<p>Exterior only wash, clear coat shine, clear coat protectant, and underbody wash.  </p>
-				<p> $15 </p>
+				<p> $35 </p>
 
 				<input type="hidden" name="cmd" value="_s-xclick" />
 				<input type="hidden" name="hosted_button_id" value="DUHW64YWZSHGS" />

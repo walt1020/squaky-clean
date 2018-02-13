@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../Packages/package.css';
+
 class Signin extends Component {
     state = {
         isLogin: false
@@ -30,8 +32,8 @@ class Signin extends Component {
     render() {
       return (
         <div className='row'>
-            <div className='col-lg-6 customerSignin text-left'>
-                <h1>New User Sign-Up</h1>
+            <div className='col-sm-6 customerSignin text-left washPackages'>
+                <h3>New User Sign-Up</h3>
                 <form data-toggle="validator" role="form">
                     <div className="form-group">
                         <label htmlFor="inputEmail" className="control-label">Email</label>
@@ -54,8 +56,8 @@ class Signin extends Component {
                     </div>
                 </form>
             </div>
-            <div className='col-lg-6 customerSignin text-left'>
-                <h1>Existing User Sign-In</h1>
+            <div className='col-sm-6 customerSignin text-left washPackages'>
+                <h3>Existing User Sign-In</h3>
                 <form data-toggle="validator" role="form">
                     <div className="form-group">
                         <label htmlFor="existingEmail" className="control-label">Email</label>

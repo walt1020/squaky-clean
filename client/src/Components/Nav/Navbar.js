@@ -13,7 +13,7 @@ class Navbar extends Component {
             </div>
             <ul className="nav navbar-nav">
               <li className="dropdown">
-                <a href="#" className="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Packages 
+                <a className="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Packages 
                   <span className="caret"></span> 
                 </a> 
                 <ul className="dropdown-menu" aria-labelledby="drop1">
