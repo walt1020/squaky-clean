@@ -9,13 +9,13 @@ const bodyParser = require("body-parser");
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
-// Mongoose dependencies and connection
-// var mongoose = require('mongoose');
-// mongoose.Promise = global.Promise;
+Mongoose dependencies and connection
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
-// mongoose.connect('mongodb://localhost/node-auth')
-//   .then(() =>  console.log('connection succesful'))
-//   .catch((err) => console.error("mongoose:", err));
+mongoose.connect('mongodb://localhost/node-auth')
+  .then(() =>  console.log('connection succesful'))
+  .catch((err) => console.error("mongoose:", err));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
