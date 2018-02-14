@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const routes = require("./routes/index.js");
+
 
 // Passport dependencies
 var passport = require('passport');
@@ -16,6 +16,12 @@ mongoose.connect('mongodb://localhost/node-auth')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error("mongoose:", err));
 
+require("./models/customer");
+require("./models/appointment");
+require("./models/technician");
+
+
+const routes = require("./routes/api/index.js");
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

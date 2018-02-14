@@ -1,15 +1,24 @@
 const router = require("express").Router();
 
-const technicianController = require("../Controllers/technicianController");
+const technicianController = require("../../Controllers/technicianController");
+
+router.get("/", technicianController.findAll)
+	
+router.post("/create", function(req, res) {
+		technicianController.createCustomer;
+	});
 
 
-router.route("/technicians")
-	.get(technicianController.findAll)
-	.post(technicianController.createCustomer);
+router.get("/:id", technicianController.findById)
+	
+router.put("/:id/update", function(req, res) {
+	technicianController.updateCustomer
+})
 
+router.delete("/:id/delete", function(req, res){
 
+	technicianController.deleteCustomer
 
-router.route("/technician/:id")
-	.get(technicianController.findById)
-	.put(technicianController.updateCustomer)
-	.update(technicianController.deleteCustomer);
+})
+
+module.exports = router;

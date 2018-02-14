@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var passport = require("passport");
-var User = require("../models/Customer");
+// var User = require("../models/Customer");
 console.log('authcontroller.js');
 
 var userController = {};

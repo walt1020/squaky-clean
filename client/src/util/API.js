@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
 
 	getCustomers: function() {
-		return axios.get("/customers")
+		return axios.get("/api/customers")
 	},
 
 	getCertainCustomer: function(id) {

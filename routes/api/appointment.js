@@ -1,15 +1,24 @@
 const router = require("express").Router();
 
-const appointmentController = require("../Controllers/appointmentController");
+const appointmentController = require("../../Controllers/appointmentController");
 
 
-router.route("/appointments")
-	.get(appointmentController.findAll)
-	.post(appointmentController.createCustomer);
+router.get("/", appointmentController.findAll)
+	
+router.post("/create", function(req, res) {
+		appointmentController.createCustomer;
+	});
 
 
+router.get("/:id", appointmentController.findById)
+	
+router.put("/:id/update", function(req, res) {
+	appointmentController.updateCustomer
+})
 
-router.route("/appointment/:id")
-	.get(appointmentController.findById)
-	.put(appointmentController.updateCustomer)
-	.update(appointmentController.deleteCustomer);
+router.delete("/:id/delete", function(req, res){
+
+	appointmentController.deleteCustomer
+
+})
+module.exports = router;

@@ -1,35 +1,36 @@
-const db = require("../models");
+const Customer = require("mongoose").model("Customer");
+
 
 
 module.exports = {
 	findAll: function(req, res) {
-		db.Customer.find(req.query)
+		 Customer.find(req.query)
 		.sort(1)
 		.then(dbModal => res.JSON(dbModal))
 		.catch(err => res.status(422).json(err))
 	},
 
 	findById: function(res, res) {
-		db.Customer.findById(req.params.id)
+		 Customer.findById(req.params.id)
 		.then(dbModal => res.JSON(dbModal))
 		.catch(err => res.status(422).json(err))
 	},
 
 
 	createCustomer: function(req, res) {
-		db.Customer.create(req.body)
+		 Customer.create(req.body)
 		.then(dbModel => res.JSON(dbModel))
 		.catch(err => res.status(422).json(err)) 
 	},
 
 	updateCustomer: function(req, res) {
-		db.Customer.findOneAndUpdate({_id: req.params.id}, req.body)
+		 Customer.findOneAndUpdate({_id: req.params.id}, req.body)
 		.then(dbModel => res.JSON(dbModel))
 		.catch(err => res.status(422).json(err)) 
 	},
 
 	deleteCustomer: function (req, res) {
-		db.Technician.findById(req.params.id)
+		 Customer.findById(req.params.id)
 		.then(dbModel => dbModel.remove())
 		.then(dbModel => res.JSON(dbModel))
 		.catch(err => res.status(422).json(err)) 
