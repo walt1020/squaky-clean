@@ -16,8 +16,7 @@ import Service from "./pages/scheduleService.js";
 import backgroundMovie from "./background-movie.mp4";
 
 class App extends Component {
-
- render() {
+  render() {
    return (
      <div className="App">
        <BrowserRouter>
@@ -37,6 +36,8 @@ class App extends Component {
                <Route path="/buttonPage" exact component={ButtonPage}/>
                <Route path="/login" exact component={Login} />
                <Route path="/register" exact component={Register} />
+               <Route path="/service" exact component={Service}/>
+
              </Switch>
            </div>
            <Footer />
@@ -44,7 +45,7 @@ class App extends Component {
        </BrowserRouter>
      </div>
    );
- }
+  }
 }
 
 export default App;
