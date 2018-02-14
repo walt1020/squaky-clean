@@ -3,20 +3,20 @@ const router = require("express").Router();
 const appointmentController = require("../../Controllers/appointmentController");
 
 
-router.get("/", appointmentController.findAll)
+router.get("/api/appointments", appointmentController.findAll)
 	
-router.post("/create", function(req, res) {
+router.post("/api/create", function(req, res) {
 		appointmentController.createCustomer;
 	});
 
 
-router.get("/:id", appointmentController.findById)
+router.get("/api/:id", appointmentController.findById)
 	
-router.put("/:id/update", function(req, res) {
+router.put("/api/:id/update", function(req, res) {
 	appointmentController.updateCustomer
 })
 
-router.delete("/:id/delete", function(req, res){
+router.delete("/api/:id/delete", function(req, res){
 
 	appointmentController.deleteCustomer
 

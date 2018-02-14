@@ -4,18 +4,18 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 
-const routes = require("./routes/index.js");
+
 const bodyParser = require("body-parser");
 
 // Passport dependencies
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
-Mongoose dependencies and connection
+// Mongoose dependencies and connection
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/node-auth')
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/squeakyCleanDb")
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error("mongoose:", err));
 
@@ -41,9 +41,9 @@ app.use('/api', routes)
 
 // Send every request to the React app
 // Define any API routes before this runs
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/public/index.html"));
-});
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/public/index.html"));
+// });
 
 app.post('/service',function(req,res){
 console.log(req.body);

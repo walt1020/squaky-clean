@@ -5,7 +5,7 @@ module.exports = {
 	findAll: function(req, res) {
 		 Appointment.find(req.query)
 		.sort(1)
-		.then(dbModal => res.JSON(dbModal))
+		.then(dbModal => res.json(dbModal))
 		.catch(err => res.status(422).json(err))
 	},
 

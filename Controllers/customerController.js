@@ -1,12 +1,14 @@
-const Customer = require("mongoose").model("Customer");
+// const Customer = require("mongoose").model("Customer");
+
+const Customer = require("../models/customer");
 
 
 
 module.exports = {
 	findAll: function(req, res) {
-		 Customer.find(req.query)
-		.sort(1)
-		.then(dbModal => res.JSON(dbModal))
+		 Customer.find({})
+		.sort({"name": 1})
+		.then(dbModal => res.json(dbModal))
 		.catch(err => res.status(422).json(err))
 	},
 

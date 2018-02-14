@@ -5,7 +5,7 @@ const technicianRoutes = require("./technician");
 
 
 
-router.use("/customer", customerRoutes);
+router.use("/customers", customerRoutes);
 router.use("/appointment", appointmentRoutes);
 router.use("/technician", technicianRoutes);
 

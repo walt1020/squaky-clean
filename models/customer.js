@@ -23,6 +23,6 @@ const customerSchema = new Schema({
   special_instructions: {type: String, required:true}
 });
 
-const Customer = mongoose.model("Customer", customerSchema);
+const Customer = mongoose.model("Customer", customerSchema, "customers");
 
 module.exports = Customer;
