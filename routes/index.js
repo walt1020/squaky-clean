@@ -6,5 +6,28 @@ var api =  require('./api');
 // restrict index for logged in user only
 router.use('/', api);
 
+
+// route to register page
+router.get('/register', auth.register);
+
+// route for register action
+router.post('/register', auth.doRegister);
+
+// route to login page
+router.get('/login', auth.login);
+
+// route for login action
+router.post('/login', auth.doLogin);
+
+// route for logout action
+router.get('/logout', auth.logout);
+
+router.get('/test',function(req,res){
+	return res.json({'test':'successful'});
+})
+router.post('/service',function(req,res){
+	console.log(req.body);
+})
+
 module.exports = router;
 

@@ -32,14 +32,15 @@ class Navbar extends Component {
                 </ul> 
               </li>
               <li>
+                <Link to="/service">Schedule Service</Link>
+              </li>
+              <li>
                 <Link to="/contact">Contact Us</Link>
               </li>
               <li>
                 <Link to="/">Logout</Link>
               </li>
-              <li>
-                <Link to="/">Schedule Service</Link>
-              </li>
+              
             </ul>
             
           </div>
