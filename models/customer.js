@@ -9,14 +9,14 @@ const customerSchema = new Schema({
   password: {type: String, required: true},
   position: {type: String, required: true},
   emailAddress: { type: String, required: true, unique: true},
-  car: {
-  	make: {type: String, required:true},
-  	model: {type: String, required:true},
-  	color: {type: String, required:true},
-  	year_made: {type: String, required: true},
-  	License_plate: {type: String, required: true}
+  car: [{
+  	make: {type: String, required:false},
+  	model: {type: String, required:false},
+  	color: {type: String, required:false},
+  	year_made: {type: String, required: false},
+  	License_plate: {type: String, required: false}
 
-  },
+  }],
   home_address: {type: String, required:true},
   technician: {type: Boolean, default:false},
   product_selected: {type: String},
