@@ -8,11 +8,11 @@ const defaultState = {
 }
 var styles = {
   fonts:{
-    color: 'blue',
+    color: 'black',
   
   },
   background:{
-    backgroundColor:'white'
+    backgroundColor:'rgba(100,100,241, 0.8)'
   }
 }
 
@@ -39,7 +39,7 @@ export class Contact extends React.Component {
     return (
       <section>
           <Jumbotron 
-            title="Contact US"
+            title="Contact Us"
             subTitle="We would love to hear your feedback"
             description="Thank you for being a customer!"
           />
@@ -55,7 +55,7 @@ export class Contact extends React.Component {
                       placeholder="name@example.com" />
             </div>
             <div className="form-group">
-              <label for="exampleFormControlTextarea1">Enter your comment here.</label>
+              <label style={styles.fonts} for="exampleFormControlTextarea1">Enter your comment here.</label>
               <textarea className="form-control"
                         name="body"
                         value={this.state.body}
