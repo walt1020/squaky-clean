@@ -5,7 +5,6 @@ const app = express();
 const routes = require("./routes/index.js");
 const bodyParser = require("body-parser");
 
-
 // Passport dependencies
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -14,18 +13,14 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 const config = require('./config');
-var mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
-
 mongoose.connect('mongodb://localhost/node-auth')
-   .then(() =>  console.log('connection succesful'))
-   .catch((err) => console.error("mongoose:", err));
+  .then(() =>  console.log('connection succesful'))
+  .catch((err) => console.error("mongoose:", err));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
